@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Janardhan Reddy illuru Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Janardhan Reddy Illuru</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/formal.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Janardhan Reddy Illuru</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist   ',
+						'Data Analyst   ',
+						'Machine Learning Engineer   ',
+						'AI Engineer   ',
+						'Business Analyst   '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Data Scientist</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/jana2207" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Jana2207" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Janardhan Reddy Illuru</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Scientist</span></p>
+										<p><span class="title-s">Experience: </span> <span>01 Years 00 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Hyderbad, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Microsoft PowerBI</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+										</div>
+									
+										<span>Advanced Excel</span> <span class="pull-right">85%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+												aria-valuemax="100"></div>
+									</div>
+									
+									<span>Tableau</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									
+									</div>
+									
+									<span>Deep Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Natural Language Processing</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>GenerativeAI</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<div style="text-align: justify; width: 80%; margin: 0;">
+									<p>
+										I am a passionate Data Scientist skilled in transforming raw data into actionable insights that drive smarter 
+										decision-making. With expertise in machine learning, data processing, and predictive analytics, I focus on 
+										building models that solve complex problems and optimize processes.
+									</p>
+								
+									<p>
+										My experience spans diverse areas, including LiDAR data analysis for infrastructure maintenance and risk prediction 
+										models for insurance claims, achieving impactful results. Proficient in Python, TensorFlow, Scikit-learn, and SQL-based 
+										databases, I bring analytical rigor and innovation to every project.
+									</p>
+								
+									<p>
+										I thrive on creating interactive dashboards using tools like Power BI, helping teams uncover trends and seize 
+										opportunities. My goal is to leverage data science to enable informed decisions and drive business success.
+									</p>
+								</div>
+								
+								
+								
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Telugu</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Advanced Excel, PySpark, Git, BIM &amp; Geo-Special Analysis (LiDAR)</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Cricket, Traveling, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="12">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/jana2207" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+			<div style="text-align: justify; width: 80%; margin: auto;">
+            <p>Data Scientist skilled in Machine Learning, Deep Learning, Natural Language Processing, data processing, and predictive analytics with a strong focus on model development and data-driven insights. 
+				Proficient in Python, TensorFlow, Scikit-learn, and SQL-based databases, with extensive experience in LiDAR data analysis for infrastructure 
+				maintenance and risk prediction models for insurance claims. Adept at using tools like Power BI for data visualization, bringing actionable insights to 
+				optimize decision-making processes.</p></div>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023:June - 2024:June</span>
+						<h2>Trainee Engineer - LiDAR Data Processing</h2>
+						<span class="position">| Aarvee Associates |</span>
+						<p class="mt-4">Road Condition Prediction for Maintenance Using LiDAR Data and Machine Learning Techniques. 
+							<ul>
+								<li>Developed 3D models of road surfaces using LiDAR data to predict road deterioration.</li>
+								<li>Detected surface irregularities like cracks and potholes by analyzing high-resolution 3D models with CNNs, incorporating LiDAR data and external factors such as traffic load and weather for precise predictions.</li>
+								<li>Tools & Technologies: LiDAR point cloud data, Spatix, Python, TensorFlow, Scikit-learn, Convolutional Neural Networks (CNN), Geographic Information System (GIS).</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023:November - 2024:November</span>
+						<h2>Data Scientist Intern</h2>
+						<span class="position">| Learnbay |</span>
+						<p class="mt-4">Learnbay is a renowned global e-learning platform offering practical knowledge in Data Science, Data Analytics, and AI, in collaboration with IBM. 
+							<ul>
+								<li>Gained in-depth theoritical and practical knowledge in Python, statistics, and SQL, applying these skills to real-world data science projects.</li>
+								<li>Developed expertise in machine learning, deep learning, and natural language processing (NLP) through hands-on projects.</li>
+								<li>Utilized Power BI and Tableau to create interactive dashboards and detailed reports, effectively transforming complex datasets into actionable insights and visual narratives.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023 - 2024</span>
+    					<h2>Advanced Data Science and AI 	Certification</h2>
+    					<span class="position">Learnbay (IBM)</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019 - 2023</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">Indian Institutes of Information Technologies</span>
+    					<p class="mt-4">Grade: 9.01</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="images/JanardhanReddyIlluru.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Machine Learning and Data Analytics projects on Python, Machine Learning, Deep Learning, Natural Language Processing, GenAI, SQL, Power BI & Tableau.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Jana2207/Fraud_Detection_in_Banking-_A_Predictive_Approach_to_ATM_Transactions" class="block-20 zoom-effect" style="background-image: url('images/atm_fraud.jpg'); border-radius: 15px;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Jana2207/Fraud_Detection_in_Banking-_A_Predictive_Approach_to_ATM_Transactions/blob/master/A%20Predictive%20Approach%20to%20ATM%20Transactions.ipynb">Fraud Detection in Banking:- A Predictive Approach to ATM Transactions (Machine Learning)</a></h3>
+				<div style="text-align: justify; width: 100%; margin: 0;">
+				<p>This project developed a machine learning model for detecting and mitigating fraudulent ATM transactions, achieving a 90% reduction in fraud. By identifying 114 suspicious transactions with high accuracy, 
+					the model enhances real-time fraud detection and prevention, strengthening the bank's security and reputation while enabling proactive measures against financial threats.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Jana2207/Crunchy-Corner-Business-Analysis-Optimization-and-Budgeting" class="block-20 zoom-effect" style="background-image: url('images/crunchy_corner.jpg'); border-radius: 15px;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Jana2207/Crunchy-Corner-Business-Analysis-Optimization-and-Budgeting/blob/main/dashboard.pdf">Crunchy Corner Business Analysis, Optimization, and Budgeting using PowerBI</a></h3>
+                <div style="text-align: justify; width: 100%; margin: 0;">
+					<p>Developed a Power BI report that boosted net revenue by 15-20% and improved EBITDA margins by 10-12% through cost optimization and revenue strategies. Achieved a 7-10% reduction in operational costs and enhanced product performance, 
+						increasing gross profit by 20-25% in key categories. Leveraged data-driven insights to accelerate decision-making by 25-30% and optimize resource allocation, driving significant ROI improvements.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Jana2207/Amazon_data_analytics_using_sql/tree/main" class="block-20 zoom-effect" style="background-image: url('images/amazon.webp'); border-radius: 15px;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Jana2207/Amazon_data_analytics_using_sql/blob/main/SQL%20code/Business%20problems%20and%20advanced%20analysis.sql">Amazon USA Sales Data Analysis using SQL</a></h3>
+                <div style="text-align: justify; width: 100%; margin: 0;">
+					<p>
+						I analyzed a dataset of 20,000+ sales records from an e-commerce platform, using advanced PostgreSQL queries across 9 different tables to address business challenges like low product availability, high return rates, and shipment delays. The project focused on revenue analysis, 
+						customer segmentation, and inventory management, while enhancing my skills in database optimization and SQL techniques to drive business decision-making.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jana2207/Sales-and-Customer-Dashboard/tree/main" class="block-20 zoom-effect" style="background-image: url('images/sales_tableau.png'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Sales-and-Customer-Dashboard/blob/main/Sales_and_Customer_Dashboard.pdf">Sales Performance & Customer Behavior Analytics Dashboard using Tableau</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+				  <p>This project features two interactive dashboards created in Tableau to analyze sales performance and customer behavior. The Sales Dashboard tracks key metrics, trends, and product comparisons, while the Customer Dashboard provides insights into customer behavior, sales trends, and top customers by profit. 
+					Both dashboards offer dynamic year selection, interactive filters, and a floating filter for enhanced usability, providing a comprehensive tool for data analysis.</p></div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jana2207/Varshini_Edtech_Analysis_Excel" class="block-20 zoom-effect" style="background-image: url('images/varshini_edtch.png'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Varshini_Edtech_Analysis_Excel/blob/main/Varshini_edtech_sales_analysis.png">Varshini Edtech Sales Analysis using Excel</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+					  <p>This project features an interactive dashboard created in Excel to analyze sales performance, consultant productivity, and advertising effectiveness. The dashboard tracks key metrics such as total earnings, monthly trends, and top-performing consultants. It also provides insights into training model sales and course enrollments. 
+						The dashboard includes dynamic filters for sales teams, consultants, and advertising channels, offering an intuitive tool for decision-making and performance tracking.</p></div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/Jana2207/Flight_Fare_Prediction_and_Analysis/blob/main/Flight_Fare_Prediction.pdf" class="block-20 zoom-effect" style="background-image: url('images/flight_fare.png'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Flight_Fare_Prediction_and_Analysis/blob/main/Flight_fare_prediction.ipynb">Flight Fare Prediction: Machine Learning for Data-Driven Pricing in Indian Aviation</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+					  <p>
+						This project predicts domestic flight ticket prices in India using machine learning models. A dataset of 10,683 records was analyzed, with key features like airline, stops, and timings influencing prices. After data cleaning and feature engineering, GradientBoostingRegressor achieved the best performance with an R² score of 0.867. 
+						The model offers actionable insights for optimizing pricing strategies.</p></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jana2207/Car_insurance_claim_prediction" class="block-20 zoom-effect" style="background-image: url('images/car_insurance.png'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Car_insurance_claim_prediction/blob/main/Car_Insurance_Policy_Prediciton.ipynb">Car Insurance Claim Prediction: Leveraging Advanced Machine Learning</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+				  <p>This project developed a car insurance claim prediction model using a dataset of 109,688 records. After feature engineering and data balancing with SMOTE, the XGBoost Classifier achieved the best performance with a test accuracy and AUC-ROC of 93.3%,
+					 aiding insurers in risk assessment and pricing strategies.</p></div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jana2207/Google-Trend-Analysis-using-PowerBI" class="block-20 zoom-effect" style="background-image: url('images/google_trend.png'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Google-Trend-Analysis-using-PowerBI/blob/main/Google_Trend_Analysis.pdf">Real-Time Keyword Trend Analysis Dashboard for Actionable Insights</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+					  <p>This project developed a dashboard leveraging Google Trends data to track keyword popularity, analyze regional interest, and identify rising and top search terms. With features like time-based analysis, customizable filters, and auto-refresh, 
+						it provides actionable insights for marketers and businesses to optimize strategies and target high-interest regions effectively.</p></div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/Jana2207/Library_management_system_SQL" class="block-20 zoom-effect" style="background-image: url('images/library.jpg'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Library_management_system_SQL/blob/main/Analysis.sql">Optimized Library Management System with PostgreSQL</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+					  <p>This project implements a Library Management System with PostgreSQL, focusing on efficient database operations such as managing book and member records, tracking book issuance, and calculating overdue fines. It includes advanced SQL tasks like creating stored procedures, generating performance reports, 
+						and performing complex queries to optimize data management and analysis.</p></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	
+
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jana2207/Credit-Card-Weekly-Financial-Dashboard-PowerBI" class="block-20 zoom-effect" style="background-image: url('images/weekly_credit_card.png'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Credit-Card-Weekly-Financial-Dashboard-PowerBI/blob/main/credit_card_weekly_financial_dashboard.pdf">Interactive Credit Card Financial Dashboard Using Power BI</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+				  <p>This project creates an interactive Power BI dashboard to monitor key credit card metrics, providing real-time insights into transaction volumes, values, customer demographics, and trends. 
+					It enables stakeholders to make informed decisions through intuitive visualizations and actionable insights.</p></div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jana2207/Market-SIze-Analysis-of-EV-Vehicles" class="block-20 zoom-effect" style="background-image: url('images/Market_size_analysis\ of\ ev\ vehicles.gif'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Market-SIze-Analysis-of-EV-Vehicles/blob/main/Market%20size%20analysis%20of%20EV%20Vehicles.ipynb">Market Size Analysis and Growth Forecast for Electric Vehicles (EVs) using Python</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+					  <p>This project analyzed the electric vehicle (EV) market, forecasting its growth over the next five years. It examined current trends, key players, and consumer behavior, 
+						using statistical models to predict future developments and challenges, highlighting the EV industry's significant growth potential.</p></div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/Jana2207/Hair_fall_data_analysis_and_remedied_recomendation/tree/main" class="block-20 zoom-effect" style="background-image: url('images/hairfall.webp'); border-radius: 15px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jana2207/Hair_fall_data_analysis_and_remedied_recomendation/blob/main/Hair_Fall_analysis_and_Remidies_recomendation.ipynb">Hair Fall Analysis and Remedies Recommendation Using Python</a></h3>
+				  <div style="text-align: justify; width: 100%; margin: 0;">
+					  <p>
+						This project analyzes factors contributing to hair loss, such as genetics, hormonal changes, medical conditions, medications, nutrition, stress, age, hair care habits, environmental influences, smoking, and weight loss. 
+						The goal is to identify patterns in the data and provide personalized recommendations for addressing hair fall.</p></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+
+	
+	<br>
+		<!-- added justify-content-center to center align the last two projects
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div> -->
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <!--   <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Jana2207" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			 </div>
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Hyderbad, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel:+919491510644">+91 9491510644</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:janailluru2207@gmail.com">janailluru2207@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="images/JanardhanReddyIlluru.pdf">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSckiig786iIE68Vx2NzUJTEsavYyMvPEe2L4SNTUFR1yBzWAQ/viewform?usp=dialog" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Jana2207"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/jana2207"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/janardhan_2207?t=yRblGXFHqH8zLvPcKNGdFA&s=09"><span class="icon-twitter"></span></a></li>
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <li class="ftco-animate"><a href="https://www.instagram.com/janailluru/profilecard/?igsh=MXM1b3U0bDduOTE4aA=="><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
